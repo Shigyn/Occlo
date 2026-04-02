@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peintre en Bâtiment Béziers – Délai rapide & Garantie satisfaction</title>
+  <meta name="description" content="OCLLO PEINTURE à Béziers, peintre en bâtiment pour particuliers et entreprises. Peinture intérieure et extérieure, finition impeccable, devis rapide.">
+  <link rel="canonical" href="https://ocllopeinture-beziers.fr/">
+  <meta property="og:title" content="Peintre en Bâtiment Béziers – OCLLO PEINTURE">
+  <meta property="og:description" content="Peinture intérieure et extérieure, devis rapide, garantie satisfaction. Contactez Claire Cantagrill E.I. à Béziers.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1581091870622-d33aa5efc5ef?w=1200&q=80">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Variables CSS */
+    :root {
+      --color-primary: #1a3a5c;
+      --color-accent: #e48b2f;
+      --color-bg: #ffffff;
+      --color-text: #333333;
+      --color-card-bg: #f9f9f9;
+      --font-primary: 'Plus Jakarta Sans', sans-serif;
+      --border-radius: 8px;
+      --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* Reset & global */
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-primary); background: var(--color-bg); color: var(--color-text); line-height: 1.6; }
+    img { max-width: 100%; height: auto; display:block; }
+
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 0; left: 0; width: 100%;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    nav .logo { font-weight: 700; color: var(--color-primary); font-size: 1.5rem; }
+    nav ul { display: flex; list-style: none; gap: 2rem; }
+    nav ul li a { text-decoration: none; color: var(--color-text); font-weight: 500; transition: var(--transition); }
+    nav ul li a:hover { color: var(--color-primary); }
+
+    /* Hero */
+    #accueil {
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1581091870622-d33aa5efc5ef?w=1200&q=80') center/cover no-repeat;
+      display: flex; align-items: center; justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 0 1rem;
+      color: #fff;
+      position: relative;
+    }
+    #accueil::after {
+      content:""; position:absolute; top:0; left:0; width:100%; height:100%;
+      background: rgba(0,0,0,0.35);
+    }
+    #accueil .hero-content { position: relative; z-index: 2; max-width: 800px; }
+    #accueil h1 { font-size: 2.8rem; margin-bottom: 1rem; }
+    #accueil p { font-size: 1.2rem; margin-bottom: 2rem; }
+    #accueil .cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    #accueil .cta-buttons a {
+      padding: 0.8rem 1.5rem;
+      border-radius: var(--border-radius);
+      text-decoration: none;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+    #accueil .cta-buttons .primary { background: var(--color-accent); color: #fff; }
+    #accueil .cta-buttons .primary:hover { background: darkorange; }
+    #accueil .cta-buttons .secondary { background: rgba(255,255,255,0.8); color: var(--color-primary); }
+    #accueil .cta-buttons .secondary:hover { background: rgba(255,255,255,1); }
+
+    /* Stats */
+    .stats {
+      display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; color:#fff;
+    }
+    .stats div { text-align: center; }
+    .stats div h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+
+    /* Services */
+    #services { padding: 6rem 2rem; background: var(--color-bg); }
+    #services h2 { text-align: center; font-size: 2rem; margin-bottom: 2rem; color: var(--color-primary); }
+    .service-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); gap: 2rem; max-width:1200px; margin:0 auto; }
+    .service-card {
+      background: var(--color-card-bg); border-radius: var(--border-radius);
+      padding: 2rem; text-align: center; transition: var(--transition); box-shadow:0 4px 12px rgba(0,0,0,0.05);
+    }
+    .service-card:hover { transform: translateY(-5px); box-shadow:0 8px 20px rgba(0,0,0,0.1); }
+    .service-card svg { width:40px; height:40px; margin-bottom:1rem; fill: var(--color-accent); }
+    .service-card h3 { margin-bottom: 0.5rem; font-size:1.2rem; color: var(--color-primary); }
+
+    /* Bouton téléphone flottant */
+    .call-button {
+      position: fixed; bottom: 1rem; left: 1rem;
+      background: var(--color-accent); color: #fff;
+      padding: 1rem 1.2rem; border-radius:50px;
+      font-weight:600; text-decoration:none;
+      box-shadow:0 4px 12px rgba(0,0,0,0.2);
+      z-index: 1000;
+      transition: var(--transition);
+    }
+    .call-button:hover { background: darkorange; }
+
+    /* Scroll reveal animations */
+    .fade-in { opacity: 0; transform: translateY(20px); transition: all 0.8s ease-out; }
+    .fade-in.show { opacity: 1; transform: translateY(0); }
+
+    @media(max-width:768px){
+      nav ul { display: none; }
+      #accueil h1 { font-size: 2rem; }
+      .cta-buttons a { width:100%; text-align:center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <div class="logo">OCLLO PEINTURE</div>
+  <ul>
+    <li><a href="#accueil">Accueil</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#apropos">À propos</a></li>
+    <li><a href="#temoignages">Témoignages</a></li>
+    <li><a href="#zones">Zones</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="tel:0603442784" class="call-button">Appeler</a>
+</nav>
+
+<!-- Hero -->
+<section id="accueil">
+  <div class="hero-content">
+    <h1>Peintre en Bâtiment à Béziers</h1>
+    <p>Délai rapide et garantie satisfaction pour particuliers et entreprises dans tout le département de l’Hérault.</p>
+    <div class="cta-buttons">
+      <a href="#contact" class="primary">Demander un devis</a>
+      <a href="#services" class="secondary">Nos services</a>
+    </div>
+    <div class="stats">
+      <div><h3>10+</h3>Années d’expérience</div>
+      <div><h3>500+</h3>Projets réalisés</div>
+      <div><h3>100%</h3>Clients satisfaits</div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services">
+  <h2>Nos Services</h2>
+  <div class="service-grid">
+    <div class="service-card fade-in">
+      <svg viewBox="0 0 64 64"><path d="M2 32h60v2H2z"/></svg>
+      <h3>Peinture intérieure</h3>
+      <p>Rénovation et peinture de murs, plafonds et cloisons intérieures.</p>
+    </div>
+    <div class="service-card fade-in">
+      <svg viewBox="0 0 64 64"><path d="M2 32h60v2H2z"/></svg>
+      <h3>Peinture extérieure</h3>
+      <p>Façades, volets et portes avec finitions durables et esthétiques.</p>
+    </div>
+    <div class="service-card fade-in">
+      <svg viewBox="0 0 64 64"><path d="M2 32h60v2H2z"/></svg>
+      <h3>Dépose & pose de papier peint</h3>
+      <p>Préparation des murs et pose de papiers peints avec précision.</p>
+    </div>
+    <div class="service-card fade-in">
+      <svg viewBox="0 0 64 64"><path d="M2 32h60v2H2z"/></svg>
+      <h3>Peinture sur bois & métaux</h3>
+      <p>Portes, placards, meubles et supports spéciaux.</p>
+    </div>
+    <div class="service-card fade-in">
+      <svg viewBox="0 0 64 64"><path d="M2 32h60v2H2z"/></svg>
+      <h3>Réparations & finitions</h3>
+      <p>Réparation des dégâts des eaux, plaques de plâtre, toile de verre.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Scroll reveal
+  const faders = document.querySelectorAll('.fade-in');
+  const options = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
+  const appearOnScroll = new IntersectionObserver(function(entries, observer){
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('show');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, options);
+  faders.forEach(fader => appearOnScroll.observe(fader));
+</script>
+
+<!-- À propos -->
+<section id="apropos" style="padding:6rem 2rem; background:#f0f4f8;">
+  <h2 style="text-align:center; font-size:2rem; color:var(--color-primary); margin-bottom:2rem;">À propos de Claire Cantagrill</h2>
+  <div style="display:flex; flex-wrap:wrap; max-width:1200px; margin:0 auto; gap:2rem; align-items:center;">
+    <img src="https://images.unsplash.com/photo-1573497491208-6b1acb260507?w=1200&q=80" alt="Peintre en bâtiment au travail" style="flex:1 1 350px; border-radius:var(--border-radius);" loading="lazy">
+    <div style="flex:2 1 500px;">
+      <p>Claire Cantagrill, fondatrice d’OCLLO PEINTURE, accompagne particuliers et entreprises dans tous leurs projets de peinture intérieure et extérieure à Béziers et dans l’Hérault. Avec plus de 10 ans d’expérience, elle garantit un travail soigné, rapide et durable.</p>
+      <ul style="margin-top:1.5rem; list-style:none; padding-left:0; display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:1rem;">
+        <li style="background:#fff; padding:1rem; border-radius:var(--border-radius); box-shadow:0 4px 12px rgba(0,0,0,0.05);">Qualité professionnelle</li>
+        <li style="background:#fff; padding:1rem; border-radius:var(--border-radius); box-shadow:0 4px 12px rgba(0,0,0,0.05);">Délai rapide</li>
+        <li style="background:#fff; padding:1rem; border-radius:var(--border-radius); box-shadow:0 4px 12px rgba(0,0,0,0.05);">Garantie satisfaction</li>
+        <li style="background:#fff; padding:1rem; border-radius:var(--border-radius); box-shadow:0 4px 12px rgba(0,0,0,0.05);">Respect de l’environnement</li>
+      </ul>
+      <p style="margin-top:1.5rem;">Chaque projet est personnalisé pour répondre aux besoins et goûts de nos clients, avec une attention particulière aux finitions et aux détails.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Témoignages -->
+<section id="temoignages" style="padding:6rem 2rem; background:var(--color-bg);">
+  <h2 style="text-align:center; font-size:2rem; color:var(--color-primary); margin-bottom:3rem;">Témoignages clients</h2>
+  <div style="display:grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap:2rem; max-width:1200px; margin:0 auto;">
+    <div style="background:var(--color-card-bg); padding:2rem; border-radius:var(--border-radius); box-shadow:0 4px 12px rgba(0,0,0,0.05);" class="fade-in">
+      <p>★★★★★</p>
+      <p>"Travail impeccable et rapide ! Claire a transformé mon salon avec une finition parfaite. Je recommande vivement."</p>
+      <strong>Marie L., Béziers</strong>
+    </div>
+    <div style="background:var(--color-card-bg); padding:2rem; border-radius:var(--border-radius); box-shadow:0 4px 12px rgba(0,0,0,0.05);" class="fade-in">
+      <p>★★★★★</p>
+      <p>"Peinture extérieure réalisée dans les délais annoncés, avec un rendu magnifique. Service professionnel et sympathique."</p>
+      <strong>Entreprise BTP Hérault</strong>
+    </div>
+    <div style="background:var(--color-card-bg); padding:2rem; border-radius:var(--border-radius); box-shadow:0 4px 12px rgba(0,0,0,0.05);" class="fade-in">
+      <p>★★★★★</p>
+      <p>"Claire s’occupe de tout, de la préparation à la finition. Résultat impeccable et très propre."</p>
+      <strong>Jean P., Béziers</strong>
+    </div>
+  </div>
+</section>
+
+<!-- Zones d'intervention -->
+<section id="zones" style="padding:6rem 2rem; background:#f0f4f8;">
+  <h2 style="text-align:center; font-size:2rem; color:var(--color-primary); margin-bottom:2rem;">Zones d'intervention</h2>
+  <p style="text-align:center; max-width:800px; margin:0 auto 2rem auto;">OCLLO PEINTURE intervient pour vos projets de peinture à Béziers ainsi que dans tout le département de l’Hérault, couvrant les villes suivantes :</p>
+  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1rem;">
+    <span style="background:var(--color-accent); color:#fff; padding:0.5rem 1rem; border-radius:var(--border-radius);">Béziers</span>
+    <span style="background:var(--color-accent); color:#fff; padding:0.5rem 1rem; border-radius:var(--border-radius);">Agde</span>
+    <span style="background:var(--color-accent); color:#fff; padding:0.5rem 1rem; border-radius:var(--border-radius);">Pézenas</span>
+    <span style="background:var(--color-accent); color:#fff; padding:0.5rem 1rem; border-radius:var(--border-radius);">Narbonne</span>
+    <span style="background:var(--color-accent); color:#fff; padding:0.5rem 1rem; border-radius:var(--border-radius);">Cap d'Agde</span>
+    <span style="background:var(--color-accent); color:#fff; padding:0.5rem 1rem; border-radius:var(--border-radius);">Sète</span>
+  </div>
+  <p style="text-align:center; margin-top:1.5rem;">Nous couvrons l’ensemble du département de l’Hérault pour tous vos travaux de peinture intérieure et extérieure, pour particuliers et entreprises.</p>
+</section>
+
+<!-- Contact -->
+<section id="contact" style="padding:6rem 2rem; background:var(--color-bg);">
+  <h2 style="text-align:center; font-size:2rem; color:var(--color-primary); margin-bottom:2rem;">Contactez Claire Cantagrill</h2>
+  <div style="max-width:800px; margin:0 auto; display:flex; flex-wrap:wrap; gap:2rem;">
+    <!-- Infos -->
+    <div style="flex:1 1 300px;">
+      <p><strong>Téléphone :</strong> <a href="tel:0603442784" style="color:var(--color-accent); font-weight:600;">06 03 44 27 84</a></p>
+      <p><strong>Adresse :</strong> 16 Rue Kléber, 34500 Béziers</p>
+      <p><strong>Zone d’intervention :</strong> Département de l’Hérault (Béziers, Agde, Pézenas…)</p>
+      <p><strong>Disponibilité :</strong> Ouvert jusqu’à 18:00</p>
+    </div>
+    <!-- Formulaire -->
+    <div style="flex:1 1 400px;">
+      <form id="devisForm" style="display:flex; flex-direction:column; gap:1rem;">
+        <input type="text" name="nom" placeholder="Nom" required style="padding:0.8rem; border-radius:var(--border-radius); border:1px solid #ccc;">
+        <input type="tel" name="telephone" placeholder="Téléphone" required style="padding:0.8rem; border-radius:var(--border-radius); border:1px solid #ccc;">
+        <input type="email" name="email" placeholder="Email" style="padding:0.8rem; border-radius:var(--border-radius); border:1px solid #ccc;">
+        <select name="service" required style="padding:0.8rem; border-radius:var(--border-radius); border:1px solid #ccc;">
+          <option value="">Sélectionnez le service</option>
+          <option value="Peinture intérieure">Peinture intérieure</option>
+          <option value="Peinture extérieure">Peinture extérieure</option>
+          <option value="Dépose & pose papier peint">Dépose & pose papier peint</option>
+          <option value="Peinture bois & métaux">Peinture bois & métaux</option>
+          <option value="Réparations & finitions">Réparations & finitions</option>
+        </select>
+        <textarea name="message" placeholder="Votre message" rows="4" style="padding:0.8rem; border-radius:var(--border-radius); border:1px solid #ccc;"></textarea>
+        <button type="submit" style="background:var(--color-accent); color:#fff; padding:0.8rem 1rem; border:none; border-radius:var(--border-radius); font-weight:600; cursor:pointer; transition:var(--transition);">Envoyer</button>
+        <p id="formFeedback" style="margin-top:0.5rem; color:var(--color-primary); display:none;">Merci ! Votre demande a été envoyée.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer style="padding:3rem 2rem; background:#1a3a5c; color:#fff;">
+  <div style="max-width:1200px; margin:0 auto; display:flex; flex-wrap:wrap; justify-content:space-between; gap:2rem;">
+    <div>
+      <h3 style="margin-bottom:1rem;">OCLLO PEINTURE</h3>
+      <p>Peintre en bâtiment à Béziers – Délai rapide & Garantie satisfaction</p>
+    </div>
+    <div>
+      <h4>Navigation</h4>
+      <ul style="list-style:none; padding-left:0;">
+        <li><a href="#accueil" style="color:#fff; text-decoration:none;">Accueil</a></li>
+        <li><a href="#services" style="color:#fff; text-decoration:none;">Services</a></li>
+        <li><a href="#apropos" style="color:#fff; text-decoration:none;">À propos</a></li>
+        <li><a href="#temoignages" style="color:#fff; text-decoration:none;">Témoignages</a></li>
+        <li><a href="#zones" style="color:#fff; text-decoration:none;">Zones</a></li>
+        <li><a href="#contact" style="color:#fff; text-decoration:none;">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p><a href="tel:0603442784" style="color:var(--color-accent); text-decoration:none;">06 03 44 27 84</a></p>
+      <p>16 Rue Kléber, 34500 Béziers</p>
+    </div>
+  </div>
+  <p style="text-align:center; margin-top:2rem; font-size:0.9rem;">&copy; 2026 OCLLO PEINTURE – Tous droits réservés</p>
+</footer>
+
+<!-- Formulaire JS -->
+<script>
+  const form = document.getElementById('devisForm');
+  const feedback = document.getElementById('formFeedback');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    feedback.style.display = 'block';
+    form.reset();
+  });
+</script>
+
+<!-- JSON-LD SEO LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "OCLLO PEINTURE – Claire Cantagrill E.I.",
+  "description": "Peintre en bâtiment à Béziers, OCLLO PEINTURE propose peinture intérieure et extérieure pour particuliers et entreprises, avec délai rapide et garantie satisfaction.",
+  "image": "https://images.unsplash.com/photo-1581091870622-d33aa5efc5ef?w=1200&q=80",
+  "telephone": "0603442784",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "16 Rue Kléber",
+    "addressLocality": "Béziers",
+    "postalCode": "34500",
+    "addressRegion": "Occitanie",
+    "addressCountry": "FR"
+  },
+  "areaServed": "Hérault",
+  "priceRange": "Sur devis"
+}
+</script>
+
+</body>
+</html>
