@@ -1,290 +1,994 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Peintre en Bâtiment Béziers – Délai rapide & Garantie satisfaction</title>
-<meta name="description" content="OCLLO PEINTURE à Béziers, peintre en bâtiment pour particuliers et entreprises. Peinture intérieure et extérieure, finition impeccable, devis rapide.">
-<link rel="canonical" href="https://ocllopeinture-beziers.fr/">
-<meta property="og:title" content="Peintre en Bâtiment Béziers – OCLLO PEINTURE">
-<meta property="og:description" content="Peinture intérieure et extérieure, devis rapide, garantie satisfaction. Contactez Claire Cantagrill E.I. à Béziers.">
-<meta property="og:image" content="https://images.unsplash.com/photo-1581091870622-d33aa5efc5ef?w=1200&q=80">
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<style>
-:root {
---color-primary:#1a3a5c;
---color-accent:#e48b2f;
---color-bg:#ffffff;
---color-card-bg:#f9f9f9;
---font-primary:'Plus Jakarta Sans', sans-serif;
---border-radius:12px;
---transition:.3s cubic-bezier(.4,0,.2,1);
-}
-*{margin:0;padding:0;box-sizing:border-box;}
-html{scroll-behavior:smooth;}
-body{font-family:var(--font-primary);background:var(--color-bg);color:#333;line-height:1.6;}
-img{max-width:100%;height:auto;display:block;border-radius:var(--border-radius);}
-nav{position:fixed;top:0;left:0;width:100%;background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;z-index:1000;box-shadow:0 2px 10px rgba(0,0,0,0.05);}
-nav .logo{font-weight:700;color:var(--color-primary);font-size:1.5rem;}
-nav ul{display:flex;list-style:none;gap:2rem;}
-nav ul li a{text-decoration:none;color:#333;font-weight:500;transition:var(--transition);}
-nav ul li a:hover{color:var(--color-primary);}
-#accueil{height:100vh;background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.2)),url('https://images.unsplash.com/photo-1581091870622-d33aa5efc5ef?w=1200&q=80') center/cover no-repeat;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;color:#fff;position:relative;padding:0 1rem;}
-#accueil::after{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.3);}
-#accueil .hero-content{position:relative;z-index:2;max-width:800px;}
-#accueil h1{font-size:3rem;margin-bottom:1rem;}
-#accueil p{font-size:1.2rem;margin-bottom:2rem;}
-#accueil .cta-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
-#accueil .cta-buttons a{padding:.8rem 1.5rem;border-radius:var(--border-radius);text-decoration:none;font-weight:600;transition:var(--transition);}
-#accueil .cta-buttons .primary{background:var(--color-accent);color:#fff;}
-#accueil .cta-buttons .primary:hover{background:darkorange;}
-#accueil .cta-buttons .secondary{background:rgba(255,255,255,.8);color:var(--color-primary);}
-#accueil .cta-buttons .secondary:hover{background:rgba(255,255,255,1);}
-.stats{display:flex;justify-content:center;gap:2rem;margin-top:2rem;flex-wrap:wrap;color:#fff;}
-.stats div{text-align:center;}
-.stats div h3{font-size:1.5rem;margin-bottom:.5rem;}
-#services{padding:6rem 2rem;background:linear-gradient(120deg,#fdfbfb,#ebedee);}
-#services h2{text-align:center;font-size:2rem;margin-bottom:2rem;color:var(--color-primary);}
-.service-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;max-width:1200px;margin:0 auto;}
-.service-card{background:var(--color-card-bg);border-radius:var(--border-radius);padding:2rem;text-align:center;transition:var(--transition);box-shadow:0 4px 12px rgba(0,0,0,0.05);}
-.service-card:hover{transform:translateY(-5px);box-shadow:0 8px 20px rgba(0,0,0,0.1);}
-.service-card img{width:80px;height:80px;object-fit:cover;margin-bottom:1rem;}
-.service-card h3{margin-bottom:.5rem;font-size:1.2rem;color:var(--color-primary);}
-.fade-in{opacity:0;transform:translateY(20px);transition:all .8s ease-out;}
-.fade-in.show{opacity:1;transform:translateY(0);}
-.call-button{position:fixed;bottom:1rem;left:1rem;background:var(--color-accent);color:#fff;padding:1rem 1.2rem;border-radius:50px;font-weight:600;text-decoration:none;box-shadow:0 4px 12px rgba(0,0,0,0.2);z-index:1000;transition:var(--transition);}
-.call-button:hover{background:darkorange;}
-#apropos{padding:6rem 2rem;background:linear-gradient(135deg,#fefefe,#e6f0f5);}
-#apropos h2{text-align:center;font-size:2rem;color:var(--color-primary);margin-bottom:2rem;}
-#temoignages{padding:6rem 2rem;background:var(--color-bg);}
-#temoignages h2{text-align:center;font-size:2rem;color:var(--color-primary);margin-bottom:3rem;}
-#temoignages .testimonial-card{background:var(--color-card-bg);padding:2rem;border-radius:var(--border-radius);box-shadow:0 4px 12px rgba(0,0,0,0.05);}
-#temoignages .testimonial-card p{margin-bottom:.5rem;}
-#zones{padding:6rem 2rem;background:linear-gradient(120deg,#fdfbfb,#ebedee);}
-#zones h2{text-align:center;font-size:2rem;color:var(--color-primary);margin-bottom:2rem;}
-#zones span{background:var(--color-accent);color:#fff;padding:.5rem 1rem;border-radius:var(--border-radius);margin:0.2rem;display:inline-block;}
-#contact{padding:6rem 2rem;background:var(--color-bg);}
-#contact h2{text-align:center;font-size:2rem;color:var(--color-primary);margin-bottom:2rem;}
-#contact input,#contact select,#contact textarea{padding:.8rem;border-radius:var(--border-radius);border:1px solid #ccc;width:100%;}
-#contact button{background:var(--color-accent);color:#fff;padding:.8rem 1rem;border:none;border-radius:var(--border-radius);font-weight:600;cursor:pointer;transition:var(--transition);}
-#contact button:hover{background:darkorange;}
-footer{padding:3rem 2rem;background:var(--color-primary);color:#fff;}
-footer h3,footer h4{margin-bottom:1rem;}
-footer a{color:#fff;text-decoration:none;}
-@media(max-width:768px){nav ul{display:none;}#accueil h1{font-size:2rem;}.cta-buttons a{width:100%;text-align:center;}}
-</style>
+  <!-- SEO -->
+
+  <title>OCLLO PEINTURE – Peintre à Béziers | Intérieur, Extérieur & Décoratif</title>
+  <meta name="description" content="Claire Cantagrill, peintre professionnelle à Béziers. Peinture intérieure, extérieure et décorative dans l'Hérault. Devis gratuit, travail soigné." />
+  <link rel="canonical" href="https://ocllo-peinture.netlify.app/" />
+
+  <!-- Open Graph -->
+
+  <meta property="og:title" content="OCLLO PEINTURE – Peintre à Béziers" />
+  <meta property="og:description" content="Peinture intérieure, extérieure et décorative à Béziers et dans l'Hérault. Devis gratuit." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1200&q=80" />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- JSON-LD -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "OCLLO PEINTURE",
+    "description": "Peintre professionnelle à Béziers. Peinture intérieure, extérieure et décorative pour particuliers dans l'Hérault.",
+    "telephone": "+33603442784",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "16 Rue Kléber",
+      "addressLocality": "Béziers",
+      "postalCode": "34500",
+      "addressRegion": "Occitanie",
+      "addressCountry": "FR"
+    },
+    "areaServed": ["Béziers", "Hérault"],
+    "priceRange": "Sur devis",
+    "url": "https://ocllo-peinture.netlify.app/"
+  }
+  </script>
+
+  <style>
+    :root {
+      --noir: #141414;
+      --anthracite: #2A2A2A;
+      --or: #C8963E;
+      --or-clair: #E8B86D;
+      --creme: #FAF7F2;
+      --blanc: #FFFFFF;
+      --gris: #8A8A8A;
+      --gris-clair: #F0ECE6;
+      --border: rgba(200,150,62,0.2);
+      --font-titre: 'Playfair Display', Georgia, serif;
+      --font-corps: 'DM Sans', sans-serif;
+      --radius-sm: 4px;
+      --radius-md: 8px;
+      --shadow: 0 4px 32px rgba(0,0,0,0.12);
+      --shadow-or: 0 4px 24px rgba(200,150,62,0.25);
+      --transition: 0.35s cubic-bezier(0.4,0,0.2,1);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--creme);
+      color: var(--anthracite);
+      font-family: var(--font-corps);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+    section { padding: 96px 0; }
+
+    .container { width: 92%; max-width: 1100px; margin: 0 auto; }
+
+    .surtitre {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--or);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .surtitre::before {
+      content: '';
+      display: inline-block;
+      width: 32px;
+      height: 1.5px;
+      background: var(--or);
+    }
+
+    .section-titre {
+      font-family: var(--font-titre);
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--noir);
+      margin-bottom: 16px;
+    }
+
+    .section-sous-titre {
+      color: var(--gris);
+      font-size: 1rem;
+      max-width: 520px;
+      margin-bottom: 56px;
+      font-weight: 300;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-corps);
+      font-weight: 600;
+      font-size: 0.9rem;
+      letter-spacing: 0.04em;
+      padding: 14px 28px;
+      border-radius: var(--radius-sm);
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+      min-height: 52px;
+    }
+    .btn-or { background: var(--or); color: var(--blanc); box-shadow: var(--shadow-or); }
+    .btn-or:hover { background: var(--or-clair); transform: translateY(-2px); }
+    .btn-contour { background: transparent; color: var(--blanc); border: 1.5px solid rgba(255,255,255,0.6); }
+    .btn-contour:hover { background: rgba(255,255,255,0.1); border-color: var(--blanc); }
+
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    /* ===== NAVBAR ===== */
+    #navbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      padding: 20px 0;
+      transition: background var(--transition), padding var(--transition), box-shadow var(--transition);
+    }
+    #navbar.scrolled {
+      background: rgba(250,247,242,0.97);
+      backdrop-filter: blur(12px);
+      padding: 14px 0;
+      box-shadow: 0 1px 0 var(--border);
+    }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo { display: flex; flex-direction: column; }
+    .nav-logo-principal {
+      font-family: var(--font-titre);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--blanc);
+      line-height: 1.1;
+      transition: color var(--transition);
+    }
+    .nav-logo-sub {
+      font-size: 0.65rem;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.65);
+      transition: color var(--transition);
+    }
+    #navbar.scrolled .nav-logo-principal { color: var(--noir); }
+    #navbar.scrolled .nav-logo-sub { color: var(--gris); }
+
+    .nav-links { display: flex; align-items: center; gap: 32px; }
+    .nav-links a {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: rgba(255,255,255,0.85);
+      transition: color var(--transition);
+    }
+    #navbar.scrolled .nav-links a { color: var(--anthracite); }
+    .nav-links a:hover { color: var(--or) !important; }
+
+    .nav-cta { display: flex; align-items: center; gap: 12px; }
+
+    .burger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 6px; background: none; border: none; }
+    .burger span { display: block; width: 24px; height: 2px; background: var(--blanc); border-radius: 2px; transition: var(--transition); }
+    #navbar.scrolled .burger span { background: var(--anthracite); }
+
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 999;
+      background: var(--creme);
+      flex-direction: column;
+      padding: 100px 32px 48px;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      font-family: var(--font-titre);
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: var(--anthracite);
+      padding: 20px 0;
+      border-bottom: 1px solid var(--gris-clair);
+      transition: color var(--transition);
+    }
+    .mobile-menu a:hover { color: var(--or); }
+    .mobile-menu .btn { margin-top: 32px; justify-content: center; }
+    .mobile-close { position: absolute; top: 22px; right: 22px; background: none; border: none; font-size: 1.6rem; cursor: pointer; color: var(--anthracite); padding: 8px; }
+
+    /* ===== HERO ===== */
+    #accueil {
+      min-height: 100vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 120px 0 80px;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background-image: url('https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1400&q=80');
+      background-size: cover;
+      background-position: center;
+      z-index: 0;
+    }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(105deg, rgba(20,20,20,0.78) 0%, rgba(20,20,20,0.45) 60%, rgba(20,20,20,0.2) 100%);
+      z-index: 1;
+    }
+    .hero-content { position: relative; z-index: 2; max-width: 660px; }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--or-clair);
+      margin-bottom: 24px;
+    }
+    .hero-tag::before { content: ''; display: block; width: 28px; height: 1px; background: var(--or-clair); }
+
+    .hero-content h1 {
+      font-family: var(--font-titre);
+      font-size: clamp(2.4rem, 6vw, 4rem);
+      font-weight: 700;
+      line-height: 1.1;
+      color: var(--blanc);
+      margin-bottom: 20px;
+    }
+    .hero-content h1 em { font-style: italic; color: var(--or-clair); }
+    .hero-content p { font-size: 1.05rem; color: rgba(255,255,255,0.78); font-weight: 300; margin-bottom: 40px; max-width: 500px; }
+
+    .hero-btns { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 64px; }
+
+    .hero-stats {
+      display: flex;
+      flex-wrap: wrap;
+      border: 1px solid rgba(200,150,62,0.3);
+      border-radius: var(--radius-md);
+      background: rgba(20,20,20,0.5);
+      backdrop-filter: blur(8px);
+      overflow: hidden;
+      max-width: 500px;
+    }
+    .stat-item { flex: 1; min-width: 120px; padding: 18px 20px; border-right: 1px solid rgba(200,150,62,0.2); }
+    .stat-item:last-child { border-right: none; }
+    .stat-num { font-family: var(--font-titre); font-size: 1.8rem; font-weight: 700; color: var(--or-clair); display: block; line-height: 1; }
+    .stat-label { font-size: 0.72rem; color: rgba(255,255,255,0.55); margin-top: 4px; display: block; }
+
+    /* ===== SERVICES ===== */
+    #services { background: var(--blanc); }
+
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+
+    .service-card {
+      background: var(--creme);
+      border: 1px solid var(--gris-clair);
+      border-radius: var(--radius-md);
+      padding: 36px 28px;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0;
+      width: 100%; height: 3px;
+      background: var(--or);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform var(--transition);
+    }
+    .service-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: transparent; }
+    .service-card:hover::after { transform: scaleX(1); }
+    .service-card.phare { background: var(--anthracite); border-color: transparent; color: var(--blanc); }
+    .service-card.phare::after { background: var(--or-clair); }
+    .service-card.phare .service-desc { color: rgba(255,255,255,0.6); }
+
+    .service-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--or);
+      background: rgba(200,150,62,0.12);
+      border: 1px solid rgba(200,150,62,0.3);
+      padding: 3px 10px;
+      border-radius: 100px;
+      margin-bottom: 16px;
+    }
+
+    .service-icon {
+      width: 48px; height: 48px;
+      background: rgba(200,150,62,0.1);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .service-icon svg { width: 22px; height: 22px; stroke: var(--or); fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+    .service-titre { font-family: var(--font-titre); font-size: 1.2rem; font-weight: 600; margin-bottom: 10px; }
+    .service-desc { font-size: 0.9rem; color: var(--gris); line-height: 1.65; }
+
+    /* ===== À PROPOS ===== */
+    #apropos { background: var(--creme); }
+    .apropos-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
+    .apropos-img-wrap { position: relative; }
+    .apropos-img-wrap::before {
+      content: '';
+      position: absolute;
+      top: -16px; left: -16px; right: 16px; bottom: 16px;
+      border: 1.5px solid var(--or);
+      border-radius: var(--radius-md);
+      z-index: 0;
+      pointer-events: none;
+    }
+    .apropos-img-wrap img { width: 100%; height: 500px; object-fit: cover; border-radius: var(--radius-md); position: relative; z-index: 1; }
+
+    .apropos-badge {
+      position: absolute;
+      bottom: -20px; right: -20px;
+      z-index: 2;
+      background: var(--or);
+      color: var(--blanc);
+      border-radius: var(--radius-md);
+      padding: 18px 22px;
+      text-align: center;
+      box-shadow: var(--shadow-or);
+    }
+    .apropos-badge .num { font-family: var(--font-titre); font-size: 2.2rem; font-weight: 700; line-height: 1; display: block; }
+    .apropos-badge .label { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.06em; opacity: 0.9; display: block; margin-top: 4px; }
+
+    .apropos-text p { color: var(--gris); font-size: 0.97rem; font-weight: 300; margin-bottom: 24px; }
+
+    .valeurs { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 8px; }
+    .valeur {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 16px;
+      background: var(--blanc);
+      border-radius: var(--radius-sm);
+      border-left: 3px solid var(--or);
+    }
+    .valeur-icon { color: var(--or); font-size: 1rem; flex-shrink: 0; margin-top: 2px; }
+    .valeur h4 { font-size: 0.85rem; font-weight: 600; margin-bottom: 2px; color: var(--noir); }
+    .valeur p { font-size: 0.78rem; color: var(--gris); margin: 0; }
+
+    /* ===== RÉALISATIONS ===== */
+    #realisations { background: var(--blanc); }
+    .galerie-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
+    .galerie-item { overflow: hidden; border-radius: var(--radius-md); position: relative; }
+    .galerie-item:first-child { grid-column: span 2; grid-row: span 2; }
+    .galerie-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; min-height: 180px; }
+    .galerie-item:first-child img { min-height: 380px; }
+    .galerie-item:hover img { transform: scale(1.04); }
+    .galerie-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(20,20,20,0.6) 0%, transparent 50%);
+      opacity: 0;
+      transition: opacity var(--transition);
+      display: flex; align-items: flex-end; padding: 20px;
+    }
+    .galerie-item:hover .galerie-overlay { opacity: 1; }
+    .galerie-overlay span { font-family: var(--font-titre); font-style: italic; color: var(--blanc); font-size: 0.95rem; }
+
+    /* ===== TÉMOIGNAGES ===== */
+    #temoignages { background: var(--anthracite); }
+    #temoignages .section-titre { color: var(--blanc); }
+    #temoignages .section-sous-titre { color: rgba(255,255,255,0.45); }
+    #temoignages .surtitre { color: var(--or-clair); }
+    #temoignages .surtitre::before { background: var(--or-clair); }
+
+    .temoignages-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    .temoignage-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: var(--radius-md);
+      padding: 28px 24px;
+      transition: var(--transition);
+    }
+    .temoignage-card:hover { background: rgba(255,255,255,0.08); transform: translateY(-3px); }
+    .guillemets { font-family: var(--font-titre); font-size: 3.5rem; line-height: 0.8; color: var(--or); opacity: 0.4; display: block; margin-bottom: 8px; }
+    .stars { color: var(--or); font-size: 0.9rem; letter-spacing: 3px; margin-bottom: 14px; }
+    .temoignage-card blockquote { font-size: 0.92rem; color: rgba(255,255,255,0.72); font-style: italic; font-family: var(--font-titre); line-height: 1.7; margin-bottom: 20px; }
+    .temoignage-author { display: flex; align-items: center; gap: 12px; }
+    .author-avatar { width: 40px; height: 40px; border-radius: 50%; background: var(--or); display: flex; align-items: center; justify-content: center; font-family: var(--font-titre); font-weight: 700; font-size: 0.9rem; color: var(--blanc); flex-shrink: 0; }
+    .author-name { font-weight: 600; font-size: 0.88rem; color: var(--blanc); }
+    .author-meta { font-size: 0.75rem; color: rgba(255,255,255,0.4); }
+
+    /* ===== ZONES ===== */
+    #zones { background: var(--creme); }
+    .zones-chips { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 36px; }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 18px;
+      background: var(--blanc);
+      border: 1.5px solid var(--gris-clair);
+      border-radius: 100px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--anthracite);
+      transition: var(--transition);
+    }
+    .chip:hover { border-color: var(--or); color: var(--or); }
+    .chip-dot { width: 6px; height: 6px; background: var(--or); border-radius: 50%; }
+    .zones-seo { background: var(--blanc); border-left: 3px solid var(--or); border-radius: var(--radius-sm); padding: 20px 24px; font-size: 0.9rem; color: var(--gris); line-height: 1.75; }
+
+    /* ===== CONTACT ===== */
+    #contact { background: var(--blanc); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 64px; align-items: start; }
+    .contact-info p { color: var(--gris); font-size: 0.95rem; font-weight: 300; margin-bottom: 36px; }
+    .contact-liens { display: flex; flex-direction: column; gap: 16px; margin-bottom: 36px; }
+    .contact-lien { display: flex; align-items: center; gap: 14px; font-weight: 500; font-size: 0.95rem; transition: color var(--transition); }
+    .contact-lien:hover { color: var(--or); }
+    .contact-lien-icon { width: 44px; height: 44px; background: var(--creme); border: 1px solid var(--gris-clair); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .contact-lien-icon svg { width: 18px; height: 18px; stroke: var(--or); fill: none; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+
+    .wa-btn { display: inline-flex; align-items: center; gap: 10px; background: #25D366; color: var(--blanc); padding: 14px 22px; border-radius: var(--radius-sm); font-weight: 600; font-size: 0.9rem; transition: var(--transition); min-height: 52px; }
+    .wa-btn:hover { background: #1ebe5d; transform: translateY(-2px); }
+    .wa-btn svg { width: 20px; height: 20px; fill: var(--blanc); }
+
+    .contact-form { background: var(--creme); border: 1px solid var(--gris-clair); border-radius: var(--radius-md); padding: 36px 32px; }
+    .contact-form h3 { font-family: var(--font-titre); font-size: 1.25rem; font-weight: 600; color: var(--noir); margin-bottom: 28px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; }
+    .form-group label { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gris); }
+    .form-group input, .form-group select, .form-group textarea { background: var(--blanc); border: 1.5px solid var(--gris-clair); border-radius: var(--radius-sm); color: var(--anthracite); font-family: var(--font-corps); font-size: 0.95rem; padding: 12px 14px; transition: border-color var(--transition); width: 100%; appearance: none; }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--or); }
+    .form-group textarea { resize: vertical; min-height: 110px; }
+    .form-submit { width: 100%; justify-content: center; margin-top: 8px; height: 52px; }
+    .form-success { display: none; text-align: center; padding: 32px 16px; }
+    .form-success svg { width: 52px; height: 52px; stroke: var(--or); fill: none; stroke-width: 1.6; margin: 0 auto 16px; }
+    .form-success h4 { font-family: var(--font-titre); font-size: 1.2rem; margin-bottom: 8px; }
+    .form-success p { color: var(--gris); font-size: 0.9rem; }
+
+    /* ===== FOOTER ===== */
+    footer { background: var(--noir); padding: 56px 0 28px; }
+    .footer-top { display: grid; grid-template-columns: 1.6fr 1fr 1fr; gap: 48px; margin-bottom: 48px; padding-bottom: 48px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+    .footer-brand .logo-footer { font-family: var(--font-titre); font-size: 1.3rem; font-weight: 700; color: var(--blanc); margin-bottom: 4px; }
+    .footer-brand .tagline { font-size: 0.72rem; color: rgba(255,255,255,0.35); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 14px; }
+    .footer-brand p { font-size: 0.88rem; color: rgba(255,255,255,0.4); font-weight: 300; line-height: 1.65; max-width: 280px; }
+    .footer-col h4 { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--or); margin-bottom: 18px; }
+    .footer-col ul li { margin-bottom: 10px; }
+    .footer-col ul a { font-size: 0.88rem; color: rgba(255,255,255,0.4); transition: color var(--transition); }
+    .footer-col ul a:hover { color: var(--blanc); }
+    .footer-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+    .footer-bottom p { font-size: 0.78rem; color: rgba(255,255,255,0.28); }
+    .footer-bottom a { color: rgba(255,255,255,0.28); }
+    .footer-bottom a:hover { color: var(--or); }
+
+    /* ===== WHATSAPP FLOTTANT ===== */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 24px; right: 24px;
+      z-index: 990;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #25D366;
+      color: var(--blanc);
+      padding: 14px 20px;
+      border-radius: 100px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.45);
+      transition: var(--transition);
+      animation: pulse-wa 3s ease-in-out infinite;
+    }
+    .whatsapp-float:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(37,211,102,0.6); }
+    .whatsapp-float svg { width: 22px; height: 22px; fill: var(--blanc); }
+    @keyframes pulse-wa { 0%,100% { box-shadow: 0 4px 20px rgba(37,211,102,0.45); } 50% { box-shadow: 0 4px 32px rgba(37,211,102,0.7); } }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .nav-links, .nav-cta .btn-contour { display: none; }
+      .burger { display: flex; }
+      .apropos-grid { grid-template-columns: 1fr; gap: 48px; }
+      .apropos-img-wrap img { height: 320px; }
+      .apropos-badge { bottom: -16px; right: -8px; }
+      .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+      .footer-top { grid-template-columns: 1fr; gap: 32px; }
+      .galerie-grid { grid-template-columns: 1fr 1fr; }
+      .galerie-item:first-child { grid-column: span 2; grid-row: span 1; }
+    }
+    @media (max-width: 640px) {
+      section { padding: 72px 0; }
+      .form-row { grid-template-columns: 1fr; }
+      .valeurs { grid-template-columns: 1fr; }
+      .hero-stats { flex-direction: column; }
+      .stat-item { border-right: none; border-bottom: 1px solid rgba(200,150,62,0.2); }
+      .stat-item:last-child { border-bottom: none; }
+      .galerie-grid { grid-template-columns: 1fr; }
+      .galerie-item:first-child { grid-column: span 1; }
+      .whatsapp-float .float-text { display: none; }
+      .whatsapp-float { padding: 14px; border-radius: 50%; }
+      .nav-cta .btn { display: none; }
+    }
+  </style>
+
 </head>
 <body>
 
-<!-- Navigation -->
-<nav>
-<div class="logo">OCLLO PEINTURE</div>
-<ul>
-<li><a href="#accueil">Accueil</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#apropos">À propos</a></li>
-<li><a href="#temoignages">Témoignages</a></li>
-<li><a href="#zones">Zones</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-<a href="tel:0603442784" class="call-button">Appeler</a>
-</nav>
+  <!-- NAVBAR -->
 
-<!-- Hero -->
-<section id="accueil">
-<div class="hero-content">
-<h1>Peintre en Bâtiment à Béziers</h1>
-<p>Délai rapide et garantie satisfaction pour particuliers et entreprises dans tout le département de l’Hérault.</p>
-<div class="cta-buttons">
-<a href="#contact" class="primary">Demander un devis</a>
-<a href="#services" class="secondary">Nos services</a>
-</div>
-<div class="stats">
-<div><h3>10+</h3>Années d’expérience</div>
-<div><h3>500+</h3>Projets réalisés</div>
-<div><h3>100%</h3>Clients satisfaits</div>
-</div>
-</div>
-</section>
+  <nav id="navbar">
+    <div class="container nav-inner">
+      <a href="#accueil" class="nav-logo">
+        <span class="nav-logo-principal">OCLLO PEINTURE</span>
+        <span class="nav-logo-sub">Claire Cantagrill · E.I.</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#realisations">Réalisations</a></li>
+        <li><a href="#temoignages">Avis</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="tel:0603442784" class="btn btn-contour">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          06 03 44 27 84
+        </a>
+        <a href="#contact" class="btn btn-or">Devis gratuit</a>
+      </div>
+      <button class="burger" id="burger-btn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-<!-- Services -->
-<section id="services">
-<h2>Nos Services</h2>
-<div class="service-grid">
-<div class="service-card fade-in">
-<img src="https://images.unsplash.com/photo-1581091012184-d0fc3f6dc924?w=120&q=80" alt="Peinture intérieure">
-<h3>Peinture intérieure</h3>
-<p>Rénovation et peinture de murs, plafonds et cloisons intérieures.</p>
-</div>
-<div class="service-card fade-in">
-<img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?w=120&q=80" alt="Peinture extérieure">
-<h3>Peinture extérieure</h3>
-<p>Façades, volets et portes avec finitions durables et esthétiques.</p>
-</div>
-<div class="service-card fade-in">
-<img src="https://images.unsplash.com/photo-1616627564036-5a8a6a4b7f7a?w=120&q=80" alt="Pose de papier peint">
-<h3>Dépose & pose de papier peint</h3>
-<p>Préparation des murs et pose de papiers peints avec précision.</p>
-</div>
-<div class="service-card fade-in">
-<img src="https://images.unsplash.com/photo-1598346004526-7c89df3e301d?w=120&q=80" alt="Peinture bois et métaux">
-<h3>Peinture sur bois & métaux</h3>
-<p>Portes, placards, meubles et supports spéciaux.</p>
-</div>
-<div class="service-card fade-in">
-<img src="https://images.unsplash.com/photo-1581091012180-febc07cbd0c8?w=120&q=80" alt="Réparations & finitions">
-<h3>Réparations & finitions</h3>
-<p>Réparation des dégâts des eaux, plaques de plâtre, toile de verre.</p>
-</div>
-</div>
-</section>
+  <!-- MENU MOBILE -->
 
-<!-- À propos -->
-<section id="apropos">
-<h2>À propos de Claire Cantagrill</h2>
-<div style="display:flex; flex-wrap:wrap; gap:2rem; align-items:center; max-width:1200px;margin:0 auto;">
-<img src="https://images.unsplash.com/photo-1573497491208-6b1acb260507?w=1200&q=80" alt="Peintre en bâtiment au travail" loading="lazy" style="flex:1 1 350px;">
-<div style="flex:2 1 500px;">
-<p>Claire Cantagrill, fondatrice d’OCLLO PEINTURE, accompagne particuliers et entreprises dans tous leurs projets de peinture intérieure et extérieure à Béziers et dans l’Hérault. Avec plus de 10 ans d’expérience, elle garantit un travail soigné, rapide et durable.</p>
-<ul style="margin-top:1.5rem; display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1rem; list-style:none; padding-left:0;">
-<li style="background:#fff;padding:1rem;box-shadow:0 4px 12px rgba(0,0,0,0.05);">Qualité professionnelle</li>
-<li style="background:#fff;padding:1rem;box-shadow:0 4px 12px rgba(0,0,0,0.05);">Délai rapide</li>
-<li style="background:#fff;padding:1rem;box-shadow:0 4px 12px rgba(0,0,0,0.05);">Garantie satisfaction</li>
-<li style="background:#fff;padding:1rem;box-shadow:0 4px 12px rgba(0,0,0,0.05);">Respect de l’environnement</li>
-</ul>
-<p style="margin-top:1.5rem;">Chaque projet est personnalisé pour répondre aux besoins et goûts de nos clients, avec une attention particulière aux finitions et aux détails.</p>
-</div>
-</div>
-</section>
+  <nav class="mobile-menu" id="mobile-menu">
+    <button class="mobile-close" id="mobile-close">✕</button>
+    <a href="#services">Services</a>
+    <a href="#apropos">À propos</a>
+    <a href="#realisations">Réalisations</a>
+    <a href="#temoignages">Avis clients</a>
+    <a href="#zones">Zones</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="btn btn-or">Demander un devis gratuit</a>
+    <a href="https://wa.me/33603442784?text=Bonjour%20Claire%2C%20je%20souhaite%20un%20devis%20pour%20des%20travaux%20de%20peinture." class="wa-btn" style="margin-top:12px;justify-content:center;">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.553 4.122 1.523 5.859L.057 23.882l6.168-1.442A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.805 9.805 0 01-5.028-1.378l-.36-.214-3.732.873.941-3.63-.235-.374A9.786 9.786 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+      WhatsApp
+    </a>
+  </nav>
 
-<!-- Témoignages -->
-<section id="temoignages">
-<h2>Témoignages clients</h2>
-<div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:2rem; max-width:1200px;margin:0 auto;">
-<div class="testimonial-card fade-in">
-<p>★★★★★</p>
-<p>"Claire a transformé notre salon avec un résultat parfait. Travail rapide et soigné !"</p>
-<strong>Marie L., Béziers</strong>
-</div>
-<div class="testimonial-card fade-in">
-<p>★★★★★</p>
-<p>"Peinture extérieure impeccable, équipe très professionnelle. Tout a été respecté."</p>
-<strong>Entreprise BTP, Hérault</strong>
-</div>
-<div class="testimonial-card fade-in">
-<p>★★★★★</p>
-<p>"Ponctuelle et efficace, Claire a rénové mes murs intérieurs avec beaucoup de soin."</p>
-<strong>Jean P., Béziers</strong>
-</div>
-</div>
-</section>
+  <!-- HERO -->
 
-<!-- Zones d'intervention -->
-<section id="zones">
-<h2>Zones d'intervention</h2>
-<p style="text-align:center; max-width:800px;margin:0 auto 2rem auto;">OCLLO PEINTURE intervient pour vos projets de peinture à Béziers ainsi que dans tout le département de l’Hérault :</p>
-<div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1rem;">
-<span>Béziers</span><span>Agde</span><span>Pézenas</span><span>Narbonne</span><span>Cap d'Agde</span><span>Sète</span>
-</div>
-<p style="text-align:center;margin-top:1.5rem;">Nous couvrons l’ensemble du département pour tous vos travaux de peinture intérieure et extérieure, pour particuliers et entreprises.</p>
-</section>
+  <section id="accueil">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-tag">Peintre professionnelle à Béziers</div>
+        <h1>La peinture,<br/><em>élevée au rang<br/>d'art de vivre</em></h1>
+        <p>Du mur blanc à la création décorative la plus complexe — Claire Cantagrill transforme vos intérieurs et extérieurs avec précision et sensibilité.</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn btn-or">Demander un devis gratuit</a>
+          <a href="#services" class="btn btn-contour">Voir mes services →</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Ans d'expérience</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">200+</span>
+            <span class="stat-label">Chantiers réalisés</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">5★</span>
+            <span class="stat-label">Note Google</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- Contact -->
-<section id="contact">
-<h2>Contactez Claire Cantagrill</h2>
-<div style="max-width:800px;margin:0 auto;display:flex;flex-wrap:wrap;gap:2rem;">
-<div style="flex:1 1 300px;">
-<p><strong>Téléphone :</strong> <a href="tel:0603442784" style="color:var(--color-accent);font-weight:600;">06 03 44 27 84</a></p>
-<p><strong>Adresse :</strong> 16 Rue Kléber, 34500 Béziers</p>
-<p><strong>Zone :</strong> Département Hérault</p>
-<p><strong>Disponibilité :</strong> Ouvert jusqu’à 18:00</p>
-</div>
-<div style="flex:1 1 400px;">
-<form id="devisForm" style="display:flex;flex-direction:column;gap:1rem;">
-<input type="text" name="nom" placeholder="Nom" required>
-<input type="tel" name="telephone" placeholder="Téléphone" required>
-<input type="email" name="email" placeholder="Email">
-<select name="service" required>
-<option value="">Sélectionnez le service</option>
-<option value="Peinture intérieure">Peinture intérieure</option>
-<option value="Peinture extérieure">Peinture extérieure</option>
-<option value="Dépose & pose papier peint">Dépose & pose papier peint</option>
-<option value="Peinture bois & métaux">Peinture bois & métaux</option>
-<option value="Réparations & finitions">Réparations & finitions</option>
-</select>
-<textarea name="message" placeholder="Votre message" rows="4"></textarea>
-<button type="submit">Envoyer</button>
-<p id="formFeedback" style="display:none;color:var(--color-primary);">Merci ! Votre demande a été envoyée.</p>
-</form>
-</div>
-</div>
-</section>
+  <!-- SERVICES -->
 
-<!-- Footer -->
-<footer>
-<div style="max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;gap:2rem;">
-<div>
-<h3>OCLLO PEINTURE</h3>
-<p>Peintre en bâtiment à Béziers – Délai rapide & Garantie satisfaction</p>
-</div>
-<div>
-<h4>Navigation</h4>
-<ul style="list-style:none;padding-left:0;">
-<li><a href="#accueil">Accueil</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#apropos">À propos</a></li>
-<li><a href="#temoignages">Témoignages</a></li>
-<li><a href="#zones">Zones</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</div>
-<div>
-<h4>Contact</h4>
-<p><a href="tel:0603442784">06 03 44 27 84</a></p>
-<p>16 Rue Kléber, 34500 Béziers</p>
-</div>
-</div>
-<p style="text-align:center;margin-top:2rem;font-size:0.9rem;">&copy; 2026 OCLLO PEINTURE – Tous droits réservés</p>
-</footer>
+  <section id="services">
+    <div class="container">
+      <div class="reveal">
+        <div class="surtitre">Prestations</div>
+        <h2 class="section-titre">Un savoir-faire complet,<br/>du sol au plafond</h2>
+        <p class="section-sous-titre">Chaque chantier est unique. Je m'adapte à vos envies, votre style et votre budget pour un résultat qui vous ressemble.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card phare reveal">
+          <div class="service-badge">⭐ Signature</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="service-titre">Peinture décorative</div>
+          <p class="service-desc">Effets matières, mélanges de couleurs, camaïeux, papier peint intégré… Des finitions uniques qui transforment un mur en élément de décoration à part entière.</p>
+        </div>
+        <div class="service-card phare reveal">
+          <div class="service-badge">⭐ Essentiel</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <div class="service-titre">Peinture intérieure</div>
+          <p class="service-desc">Préparation des surfaces, application soignée, finitions nettes. Salons, chambres, cuisines, couloirs — chaque pièce mérite le meilleur traitement.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div class="service-titre">Peinture extérieure</div>
+          <p class="service-desc">Ravalement de façade, murs extérieurs, volets, portails. Protection durable contre les intempéries avec des produits adaptés au climat méridional.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+          </div>
+          <div class="service-titre">Pose de papier peint</div>
+          <p class="service-desc">Papiers peints traditionnels, panoramiques, vinyles. Pose précise, raccords parfaits, y compris sur supports délicats.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4"/></svg>
+          </div>
+          <div class="service-titre">Remise en état</div>
+          <p class="service-desc">Rebouchage, enduits, ponçage et reprise de peinture. Je redonne vie à vos murs avant une vente, une location ou simplement pour vous faire plaisir.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>
+          </div>
+          <div class="service-titre">Conseil couleurs</div>
+          <p class="service-desc">Vous hésitez entre plusieurs teintes ? Je vous accompagne dans le choix des couleurs selon votre luminosité, votre mobilier et vos envies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- Formulaire JS + Scroll Reveal -->
-<script>
-const form = document.getElementById('devisForm');
-const feedback = document.getElementById('formFeedback');
-form.addEventListener('submit', function(e){
-e.preventDefault();
-feedback.style.display = 'block';
-form.reset();
-});
+  <!-- À PROPOS -->
 
-// Scroll reveal
-const faders = document.querySelectorAll('.fade-in');
-const appearOptions = {threshold:0.1,rootMargin:"0px 0px -50px 0px"};
-const appearOnScroll = new IntersectionObserver(function(entries,appearOnScroll){
-entries.forEach(entry=>{
-if(!entry.isIntersecting){return;}
-entry.target.classList.add('show');
-appearOnScroll.unobserve(entry.target);
-});
-},appearOptions);
-faders.forEach(fader=>{appearOnScroll.observe(fader);});
-</script>
+  <section id="apropos">
+    <div class="container">
+      <div class="apropos-grid">
+        <div class="apropos-img-wrap reveal">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="Claire Cantagrill peintre professionnelle Béziers" loading="lazy" />
+          <div class="apropos-badge">
+            <span class="num">10+</span>
+            <span class="label">ans d'expérience</span>
+          </div>
+        </div>
+        <div class="apropos-text reveal">
+          <div class="surtitre">À propos</div>
+          <h2 class="section-titre">Claire Cantagrill,<br/><em>artisane peintre</em><br/>à Béziers</h2>
+          <p>Installée à Béziers depuis plus de 10 ans, je mets mon savoir-faire au service des particuliers de l'Hérault. Chaque chantier est abordé avec la même rigueur : préparation minutieuse des supports, choix des bons matériaux et finitions irréprochables.</p>
+          <p>Ma spécialité ? Aller au-delà du simple mur blanc. J'aime créer des ambiances, jouer avec les textures et les couleurs pour transformer un espace ordinaire en lieu de vie qui vous ressemble vraiment.</p>
+          <div class="valeurs">
+            <div class="valeur"><span class="valeur-icon">✦</span><div><h4>Devis gratuit</h4><p>Déplacement et estimation sans engagement</p></div></div>
+            <div class="valeur"><span class="valeur-icon">✦</span><div><h4>Artisane locale</h4><p>Basée à Béziers, disponible dans tout l'Hérault</p></div></div>
+            <div class="valeur"><span class="valeur-icon">✦</span><div><h4>Finitions soignées</h4><p>Chaque détail compte, jusqu'au dernier pinceau</p></div></div>
+            <div class="valeur"><span class="valeur-icon">✦</span><div><h4>Matériaux qualitatifs</h4><p>Peintures durables, respectueuses de votre intérieur</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- JSON-LD SEO LocalBusiness -->
-<script type="application/ld+json">
-{
-"@context":"https://schema.org",
-"@type":"LocalBusiness",
-"name":"OCLLO PEINTURE – Claire Cantagrill E.I.",
-"description":"Peintre en bâtiment à Béziers, OCLLO PEINTURE propose peinture intérieure et extérieure pour particuliers et entreprises, avec délai rapide et garantie satisfaction.",
-"image":"https://images.unsplash.com/photo-1581091870622-d33aa5efc5ef?w=1200&q=80",
-"telephone":"0603442784",
-"address":{"@type":"PostalAddress","streetAddress":"16 Rue Kléber","addressLocality":"Béziers","postalCode":"34500","addressRegion":"Occitanie","addressCountry":"FR"},
-"areaServed":"Hérault",
-"priceRange":"Sur devis"
-}
-</script>
+  <!-- RÉALISATIONS -->
+
+  <section id="realisations">
+    <div class="container">
+      <div class="reveal">
+        <div class="surtitre">Réalisations</div>
+        <h2 class="section-titre">Quelques chantiers<br/>récents</h2>
+        <p class="section-sous-titre">Intérieur, extérieur, décoratif — chaque projet est unique et réalisé avec le même soin.</p>
+      </div>
+      <div class="galerie-grid reveal">
+        <div class="galerie-item">
+          <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=900&q=80" alt="Peinture décorative salon Béziers OCLLO PEINTURE" loading="lazy" />
+          <div class="galerie-overlay"><span>Peinture décorative — salon</span></div>
+        </div>
+        <div class="galerie-item">
+          <img src="https://images.unsplash.com/photo-1562663474-6cbb3eaa4d14?w=600&q=80" alt="Peinture intérieure chambre Hérault" loading="lazy" />
+          <div class="galerie-overlay"><span>Chambre — effets couleurs</span></div>
+        </div>
+        <div class="galerie-item">
+          <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=600&q=80" alt="Ravalement façade extérieure Béziers" loading="lazy" />
+          <div class="galerie-overlay"><span>Façade extérieure</span></div>
+        </div>
+        <div class="galerie-item">
+          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80" alt="Pose papier peint panoramique Hérault" loading="lazy" />
+          <div class="galerie-overlay"><span>Papier peint panoramique</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TÉMOIGNAGES -->
+
+  <section id="temoignages">
+    <div class="container">
+      <div class="reveal">
+        <div class="surtitre">Avis clients</div>
+        <h2 class="section-titre">Ce qu'ils disent<br/>de mon travail</h2>
+        <p class="section-sous-titre">5 étoiles sur Google — des clients satisfaits qui parlent mieux que moi.</p>
+      </div>
+      <div class="temoignages-grid">
+        <div class="temoignage-card reveal">
+          <span class="guillemets">"</span>
+          <div class="stars">★★★★★</div>
+          <blockquote>Claire a refait entièrement notre salon avec un effet béton ciré sur un mur et une peinture satin sur les autres. Le résultat est bluffant, exactement ce qu'on imaginait. Très professionnelle et à l'écoute.</blockquote>
+          <div class="temoignage-author">
+            <div class="author-avatar">SB</div>
+            <div><div class="author-name">Sophie B.</div><div class="author-meta">Particulière · Béziers</div></div>
+          </div>
+        </div>
+        <div class="temoignage-card reveal">
+          <span class="guillemets">"</span>
+          <div class="stars">★★★★★</div>
+          <blockquote>Ravalement de façade réalisé en 3 jours, proprement, sans débordement sur le jardin. Claire connaît son métier, elle nous a bien conseillés sur la couleur. On recommande vivement !</blockquote>
+          <div class="temoignage-author">
+            <div class="author-avatar">MP</div>
+            <div><div class="author-name">Marc P.</div><div class="author-meta">Particulier · Agde</div></div>
+          </div>
+        </div>
+        <div class="temoignage-card reveal">
+          <span class="guillemets">"</span>
+          <div class="stars">★★★★★</div>
+          <blockquote>J'avais une idée très précise pour ma chambre avec du papier peint et des couleurs complémentaires. Claire a tout compris, le rendu est magnifique. Les finitions sont impeccables.</blockquote>
+          <div class="temoignage-author">
+            <div class="author-avatar">LF</div>
+            <div><div class="author-name">Lucie F.</div><div class="author-meta">Particulière · Valras-Plage</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ZONES -->
+
+  <section id="zones">
+    <div class="container reveal">
+      <div class="surtitre">Zones d'intervention</div>
+      <h2 class="section-titre">Béziers et<br/>tout l'Hérault</h2>
+      <p class="section-sous-titre">Je me déplace sur l'ensemble du département pour vos projets de peinture intérieure, extérieure et décorative.</p>
+      <div class="zones-chips">
+        <div class="chip"><span class="chip-dot"></span>Béziers</div>
+        <div class="chip"><span class="chip-dot"></span>Agde</div>
+        <div class="chip"><span class="chip-dot"></span>Pézenas</div>
+        <div class="chip"><span class="chip-dot"></span>Valras-Plage</div>
+        <div class="chip"><span class="chip-dot"></span>Narbonne</div>
+        <div class="chip"><span class="chip-dot"></span>Sérignan</div>
+        <div class="chip"><span class="chip-dot"></span>Vendres</div>
+        <div class="chip"><span class="chip-dot"></span>Portiragnes</div>
+        <div class="chip"><span class="chip-dot"></span>Montblanc</div>
+        <div class="chip"><span class="chip-dot"></span>Servian</div>
+        <div class="chip"><span class="chip-dot"></span>Hérault (34)</div>
+      </div>
+      <div class="zones-seo">
+        OCLLO PEINTURE intervient pour vos travaux de <strong>peinture intérieure</strong>, <strong>peinture extérieure</strong> et <strong>peinture décorative</strong> à <strong>Béziers</strong> et dans tout le département de l'<strong>Hérault (34)</strong>. Agde, Pézenas, Valras, Narbonne, Sérignan… Claire Cantagrill se déplace sur tout le territoire pour un devis gratuit.
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+
+  <section id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="surtitre">Contact</div>
+          <h2 class="section-titre">Parlons de<br/>votre projet</h2>
+          <p>Un devis gratuit, c'est simplement un échange — je viens voir votre chantier et vous propose une estimation honnête, sans engagement.</p>
+          <div class="contact-liens">
+            <a href="tel:0603442784" class="contact-lien">
+              <div class="contact-lien-icon">
+                <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              </div>
+              06 03 44 27 84
+            </a>
+            <a href="#" class="contact-lien">
+              <div class="contact-lien-icon">
+                <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              16 Rue Kléber, 34500 Béziers
+            </a>
+            <a href="#" class="contact-lien">
+              <div class="contact-lien-icon">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              Lun–Ven · 08h00 – 18h00
+            </a>
+          </div>
+          <a href="https://wa.me/33603442784?text=Bonjour%20Claire%2C%20je%20souhaite%20un%20devis%20pour%20des%20travaux%20de%20peinture." class="wa-btn">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.553 4.122 1.523 5.859L.057 23.882l6.168-1.442A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.805 9.805 0 01-5.028-1.378l-.36-.214-3.732.873.941-3.63-.235-.374A9.786 9.786 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+            Écrire sur WhatsApp
+          </a>
+        </div>
+
+```
+    <div class="contact-form reveal">
+      <h3>Demande de devis gratuit</h3>
+      <form id="contact-form" name="devis-ocllo-peinture" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="#contact">
+        <input type="hidden" name="form-name" value="devis-ocllo-peinture" />
+        <p style="display:none;"><label>Ne pas remplir : <input name="bot-field" /></label></p>
+        <div class="form-row">
+          <div class="form-group"><label for="f-prenom">Prénom *</label><input type="text" id="f-prenom" name="prenom" placeholder="Marie" required /></div>
+          <div class="form-group"><label for="f-nom">Nom *</label><input type="text" id="f-nom" name="nom" placeholder="Dupont" required /></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label for="f-tel">Téléphone *</label><input type="tel" id="f-tel" name="telephone" placeholder="06 XX XX XX XX" required /></div>
+          <div class="form-group"><label for="f-email">Email</label><input type="email" id="f-email" name="email" placeholder="marie@mail.fr" /></div>
+        </div>
+        <div class="form-group">
+          <label for="f-service">Type de travaux *</label>
+          <select id="f-service" name="service" required>
+            <option value="">Sélectionnez une prestation</option>
+            <option>Peinture intérieure</option>
+            <option>Peinture extérieure / façade</option>
+            <option>Peinture décorative</option>
+            <option>Pose de papier peint</option>
+            <option>Remise en état</option>
+            <option>Conseil couleurs</option>
+            <option>Autre</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="f-message">Votre projet</label>
+          <textarea id="f-message" name="message" placeholder="Décrivez votre projet : type de pièce, surface approximative, délai souhaité…"></textarea>
+        </div>
+        <button class="btn btn-or form-submit" type="submit">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          Envoyer ma demande
+        </button>
+      </form>
+      <div class="form-success" id="form-success">
+        <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <h4>Demande envoyée !</h4>
+        <p>Claire vous rappellera rapidement pour convenir d'un rendez-vous de devis gratuit.</p>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo-footer">OCLLO PEINTURE</div>
+          <div class="tagline">Claire Cantagrill · E.I.</div>
+          <p>Peintre professionnelle à Béziers. Peinture intérieure, extérieure et décorative dans l'Hérault. Devis gratuit, travail soigné.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#realisations">Réalisations</a></li>
+            <li><a href="#temoignages">Avis clients</a></li>
+            <li><a href="#zones">Zones</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:0603442784">06 03 44 27 84</a></li>
+            <li><a href="https://wa.me/33603442784">WhatsApp</a></li>
+            <li style="color:rgba(255,255,255,0.3);font-size:0.82rem;margin-top:8px;">16 Rue Kléber<br/>34500 Béziers<br/>Hérault (34)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 OCLLO PEINTURE — Claire Cantagrill E.I. · Tous droits réservés</p>
+        <p><a href="#">Mentions légales</a> · <a href="#">Confidentialité</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOTTANT -->
+
+  <a href="https://wa.me/33603442784?text=Bonjour%20Claire%2C%20je%20souhaite%20un%20devis%20pour%20des%20travaux%20de%20peinture." class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.553 4.122 1.523 5.859L.057 23.882l6.168-1.442A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.805 9.805 0 01-5.028-1.378l-.36-.214-3.732.873.941-3.63-.235-.374A9.786 9.786 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+    <span class="float-text">WhatsApp</span>
+  </a>
+
+  <script>
+    // Navbar scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 60));
+
+    // Burger
+    const burgerBtn = document.getElementById('burger-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileClose = document.getElementById('mobile-close');
+    burgerBtn.addEventListener('click', () => mobileMenu.classList.add('open'));
+    mobileClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
+    mobileMenu.querySelectorAll('a').forEach(l => l.addEventListener('click', () => mobileMenu.classList.remove('open')));
+
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const parent = entry.target.closest('.services-grid, .temoignages-grid, .valeurs, .zones-chips, .galerie-grid');
+          if (parent) {
+            parent.querySelectorAll('.reveal').forEach((el, idx) => setTimeout(() => el.classList.add('visible'), idx * 90));
+          } else {
+            entry.target.classList.add('visible');
+          }
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => observer.observe(el));
+
+    // Formulaire Netlify
+    const form = document.getElementById('contact-form');
+    if (form) {
+      form.addEventListener('submit', (e) => {
+        const prenom = document.getElementById('f-prenom').value.trim();
+        const nom = document.getElementById('f-nom').value.trim();
+        const tel = document.getElementById('f-tel').value.trim();
+        if (!prenom || !nom || !tel) {
+          e.preventDefault();
+          [document.getElementById('f-prenom'), document.getElementById('f-nom'), document.getElementById('f-tel')].forEach(el => {
+            if (!el.value.trim()) { el.style.borderColor = '#e05'; el.addEventListener('input', () => el.style.borderColor = '', { once: true }); }
+          });
+          return;
+        }
+        e.preventDefault();
+        fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(new FormData(form)).toString() })
+        .then(() => {
+          form.style.display = 'none';
+          const s = document.getElementById('form-success');
+          s.style.display = 'flex'; s.style.flexDirection = 'column'; s.style.alignItems = 'center';
+        })
+        .catch(() => form.submit());
+      });
+    }
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - 72, behavior: 'smooth' }); }
+      });
+    });
+  </script>
 
 </body>
 </html>
